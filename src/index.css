@@ -1,0 +1,48 @@
+:root {
+  font-family: "Protest Riot", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+li {
+  display: flex;
+  height: 5rem;
+  position: relative;
+}
+
+li span {
+  position: absolute;
+  left: 6.5px;
+  top: 0;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+}
+
+abbr {
+  float: right;
+}
+
+/* .periodic-container > li:nth-child(n + 58):nth-last-child(n + 48) {
+  grid-row-start: 8;
+}
+.periodic-container > li:nth-child(n + 90):nth-last-child(n + 16) {
+  grid-row-start: 9;
+} */
