@@ -3,6 +3,7 @@
   width: 65px;
   height: 65px;
   perspective: 1000px;
+  border-radius: 0.4rem;
 }
 
 .element-container {
@@ -22,6 +23,7 @@
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: inherit;
 }
 
 .card:hover .card-inner {
@@ -35,14 +37,17 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: inherit;
 }
 
 .card-front {
   color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-back {
-  background-color: #2980b9;
+  background-color: #404040;
   color: white;
   transform: rotateY(180deg);
 }

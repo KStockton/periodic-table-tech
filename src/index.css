@@ -28,11 +28,12 @@ li {
   position: relative;
 }
 
+span {
+  align-self: baseline;
+  padding-left: 0.2rem;
+}
+
 li span {
-  position: absolute;
-  left: 6.5px;
-  top: 0;
-  font-weight: 100;
   font-family: "Montserrat", sans-serif;
 }
 

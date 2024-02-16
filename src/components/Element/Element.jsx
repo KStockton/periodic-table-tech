@@ -60,7 +60,7 @@ const Element = ({ element }) => {
           </div>
         )}
        {!element.isGap && (<div className="card-back">
-          <p>Javascript</p>
+          <p>Big O</p>
         </div>)}
       </div>
     </li>
