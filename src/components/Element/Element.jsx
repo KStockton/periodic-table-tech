@@ -34,7 +34,8 @@ const getBackgroundColor = (classification) => {
 };
 
 const Element = ({ element }) => {
-  const { atomicNumber, symbol, name, position, classification, isGap } =
+  
+  const { atomicNumber, symbolFront, nameFront, nameBack, symbolBack, position, classification } =
     element;
 
   const backgroundColor = getBackgroundColor(classification);
@@ -56,11 +57,13 @@ const Element = ({ element }) => {
         {!element.isGap && (
           <div className="card-front">
             <span>{atomicNumber}</span>
-            <abbr title={name}>{symbol}</abbr>
+            <abbr title={nameFront}>{symbolFront}</abbr>
           </div>
         )}
-       {!element.isGap && (<div className="card-back">
-          <p>Big O</p>
+       {!element.isGap && (
+       <div className="card-back">
+         <span>{atomicNumber}</span>
+         <abbr title={nameBack}>{symbolBack}</abbr>
         </div>)}
       </div>
     </li>

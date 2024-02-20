@@ -50,4 +50,6 @@
   background-color: #404040;
   color: white;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
 }
